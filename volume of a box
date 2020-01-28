@@ -1,0 +1,31 @@
+import java.util.*;
+class MyClass1
+{
+ double height,width,length;
+  MyClass1(double h,double w,double l)
+ {
+     height=h;
+     width=w;
+     length=l;
+ }
+ public void display()
+ {
+     double volume=length*width*height;
+     System.out.println("volume of the box"+volume);
+ }
+}
+public class  MyClass
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        double h=sc.nextDouble();
+        System.out.println("enter height"+h);
+        double w=sc.nextDouble();
+        System.out.println("enter width"+w);
+        double l=sc.nextDouble();
+        System.out.println("enter length"+l);
+        MyClass1 a=new MyClass1(h,w,l);
+        a.display();
+    }
+}
